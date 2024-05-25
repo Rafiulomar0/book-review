@@ -1,13 +1,13 @@
-import Books from "../components/Books/Books";
-import Hero from "../components/Hero/Hero";
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
+import Home from "../components/Home/Home";
 
 const root = () => {
   return (
     <>
       <Navbar></Navbar>
-      <Hero></Hero>
-      <Books></Books>
+      <Home></Home>
+      <Outlet></Outlet>
     </>
   );
 };

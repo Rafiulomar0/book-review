@@ -1,28 +1,13 @@
+import PropTypes from "prop-types";
 import Tags from "../Tags/Tags";
 import { FaRegStar } from "react-icons/fa";
 
 const Book = ({ book }) => {
-  const {
-    bookId,
-    bookName,
-    author,
-    image,
-    review,
-    totalPages,
-    rating,
-    categories,
-    tags,
-    publisher,
-    yearOfPublishing,
-  } = book;
+  const { bookName, author, image, rating, categories, tags } = book;
   return (
-    <div className="card w-[300px] lg:w-96 bg-base-100 shadow-xl mx-auto cursor-pointer hover:bg-base-200">
+    <div className="card w-[300px] lg:w-96 bg-base-100 border-2 mx-auto cursor-pointer hover:bg-base-200">
       <figure className="px-10 pt-10">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt="Shoes"
-          className="rounded-xl"
-        />
+        <img src={image} alt="Shoes" className="rounded-xl" />
       </figure>
       <div className="card-body">
         <h2 className=" text-md flex space-x-2 items-center">
@@ -42,6 +27,10 @@ const Book = ({ book }) => {
       </div>
     </div>
   );
+};
+
+Book.propTypes = {
+  book: PropTypes.object.isRequired,
 };
 
 export default Book;
