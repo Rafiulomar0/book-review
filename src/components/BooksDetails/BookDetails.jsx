@@ -1,11 +1,28 @@
-import { useLoaderData } from "react-router-dom";
-
+import { useLoaderData, useLocation } from "react-router-dom";
 const BookDetails = () => {
+  const location = useLocation();
+  const bookId = location.pathname.split("/")[2];
   const books = useLoaderData();
-  console.log(books);
+
+  const {
+    image,
+    bookName,
+    author,
+    categories,
+    review,
+    tags,
+    totalPages,
+    publisher,
+    yearOfPublishing,
+    rating,
+  } = books[bookId];
+
   return (
-    <div>
-      <h3>Book Details</h3>
+    <div className="container mx-auto grid grid-cols-2">
+      <div>
+        <img src={image} alt="" />
+      </div>
+      <div>{bookName}</div>
     </div>
   );
 };

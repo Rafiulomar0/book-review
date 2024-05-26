@@ -2,22 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/root";
-import Error from "./routes/Error";
-import BookDetails from "./components/BooksDetails/BookDetails";
+import Error from "./Error/Error";
 import PageToRead from "./components/PageToRead/PageToRead";
+import Home from "./components/Home/Home";
+import BookDetails from "./components/BooksDetails/BookDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Home></Home>,
     errorElement: <Error />,
     children: [
-      {
-        path: "/books/:bookId",
-        loader: () => fetch("../public/booksData.json"),
-        element: <BookDetails />,
-      },
       {
         path: "/pageToRead",
         element: <PageToRead></PageToRead>,
@@ -25,6 +20,11 @@ const router = createBrowserRouter([
       {
         path: "/listedBooks",
         element: <h1>Listed Books</h1>,
+      },
+      {
+        path: "/books/:bookId",
+        loader: () => fetch("../booksData.json"),
+        element: <BookDetails />,
       },
     ],
   },

@@ -1,21 +1,20 @@
-import { Route, Routes } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
+import Header from "../Header/Header";
 import Books from "../Books/Books";
 import Hero from "../Hero/Hero";
 
 const Home = () => {
+  const location = useLocation();
   return (
     <>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero></Hero>
-              <Books></Books>
-            </>
-          }
-        ></Route>
-      </Routes>
+      <Header></Header>
+      {location.pathname === "/" && (
+        <>
+          <Hero></Hero>
+          <Books></Books>
+        </>
+      )}
+      <Outlet></Outlet>
     </>
   );
 };

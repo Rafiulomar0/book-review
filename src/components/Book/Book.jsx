@@ -7,7 +7,7 @@ const Book = ({ book }) => {
   return (
     <div className="card w-[300px] lg:w-96 bg-base-100 border-2 mx-auto cursor-pointer hover:bg-base-200">
       <figure className="px-10 pt-10">
-        <img src={image} alt="Shoes" className="rounded-xl" />
+        <img src={image} alt="Shoes" className="rounded-xl h-96 w-96" />
       </figure>
       <div className="card-body">
         <h2 className=" text-md flex space-x-2 items-center">
