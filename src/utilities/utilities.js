@@ -9,7 +9,6 @@ const getLocalDataReadList = () => {
 };
 
 const setLocalDataReadList = (bookId) => {
-  console.log(parseInt(bookId) + 1);
   const localReadList = getLocalDataReadList();
   const newReadList = [...localReadList, parseInt(bookId) + 1];
   localStorage.setItem("ReadBooksId", JSON.stringify(newReadList));

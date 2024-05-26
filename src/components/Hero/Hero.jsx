@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeroBook from "../../assets/image/herobook.png";
 const Hero = () => {
   return (
@@ -12,9 +13,12 @@ const Hero = () => {
           <h1 className="text-3xl lg:text-5xl font-bold">
             Books to freshen up <br /> your bookshelf
           </h1>
-          <button className="btn bg-lime-500 font-bold text-white">
+          <Link
+            to="/listedBooks"
+            className="btn bg-lime-500 font-bold text-white"
+          >
             View The List
-          </button>
+          </Link>
         </div>
       </div>
     </div>
