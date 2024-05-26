@@ -11,7 +11,7 @@ const ListedBooks = () => {
   const [tab, setTab] = useState("ReadList");
   const [readData, setReadData] = useState([]);
   const [wishData, setWishData] = useState([]);
-  const [sortText, setSortText] = useState("Rating");
+  const [sortText, setSortText] = useState("None");
 
   const check = (data) => {
     const readList = [];

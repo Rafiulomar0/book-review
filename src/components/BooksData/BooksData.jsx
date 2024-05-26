@@ -48,7 +48,7 @@ const BooksData = ({ book }) => {
           </span>
         </div>
         <span className="divider"></span>
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-col lg:flex-row gap-5">
           <button className="btn rounded-full bg-blue-200 text-blue-700">
             Category: {categories}
           </button>

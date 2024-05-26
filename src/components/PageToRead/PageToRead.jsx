@@ -1,7 +1,6 @@
 import { BarChart } from "@mui/x-charts";
 import { getLocalDataReadList } from "../../utilities/utilities";
 import { useLoaderData } from "react-router-dom";
-import { useState } from "react";
 
 const PageToRead = () => {
   const booksData = useLoaderData();
