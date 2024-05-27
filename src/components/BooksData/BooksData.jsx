@@ -1,4 +1,4 @@
-import { checkPropTypes } from "prop-types";
+import PropTypes from "prop-types";
 import Tags from "../Tags/Tags";
 import { FiMapPin } from "react-icons/fi";
 import { MdOutlineContactPage } from "react-icons/md";
@@ -68,7 +68,7 @@ const BooksData = ({ book }) => {
 };
 
 BooksData.propTypes = {
-  book: checkPropTypes.object,
+  book: PropTypes.object,
 };
 
 export default BooksData;

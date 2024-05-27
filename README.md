@@ -1,8 +1,25 @@
-# React + Vite
+# Book Review Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## _A place where you can check you readlist and wishlist, and do many more_
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Can View booklists
+- Mark books in readList/Wishlist
+- A great profile page
+- Request new books
+- A great graph to show your book number of reading pages.
+
+As [John Gruber] writes on the [Markdown site][df1]
+
+## Tech
+
+Book Review built with
+
+- [ReactJS] - HTML enhanced for web apps!
+
+## License
+
+MIT
+
+[ReactJS]: https://react.dev/

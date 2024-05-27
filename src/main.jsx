@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/pageToRead",
-        loader: () => fetch("../public/booksData.json"),
+        loader: () => fetch("booksData.json"),
         element: <PageToRead />,
       },
       {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/books/:bookId",
-        loader: () => fetch("../public/booksData.json"),
+        loader: () => fetch("booksData.json"),
         element: <BookDetails />,
       },
       {
