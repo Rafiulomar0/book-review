@@ -7,7 +7,7 @@ const RequestBooks = () => {
     e.preventDefault();
   };
   return (
-    <div className="container mx-auto mt-12">
+    <div className="container mx-auto mt-12 font-work-sans">
       <h2 className="text-4xl">Request Books Here</h2>
       <form
         className="border-2 p-5 rounded w-96 mt-12 space-y-2"

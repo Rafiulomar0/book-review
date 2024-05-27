@@ -13,7 +13,7 @@ const PageToRead = () => {
   const totalPages = readList.map((book) => book.totalPages);
 
   return (
-    <div className="container mx-auto flex justify-center mt-24 p-2 bg-gray-100 rounded-lg">
+    <div className="container mx-auto flex justify-center mt-24 p-2 bg-gray-100 rounded-lg font-work-sans">
       <BarChart
         xAxis={[
           {

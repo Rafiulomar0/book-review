@@ -59,14 +59,14 @@ const BookDetails = () => {
   };
 
   return (
-    <div className="container mx-auto mt-12">
+    <div className="container mx-auto mt-12 font-work-sans">
       <div className="grid grid-cols-1 lg:grid-cols-3">
         <div className="bg-gray-100 rounded-2xl mx-auto">
           <img src={image} alt={bookName} className="w-96 p-8" />
         </div>
         <div className="col-span-2 p-1">
           <div className="space-y-4">
-            <h2 className="text-4xl font-semibold">{bookName}</h2>
+            <h2 className="text-4xl font-semibold font-playfair">{bookName}</h2>
             <h3 className="text-xl text-gray-500 font-semibold">
               By: {author}
             </h3>

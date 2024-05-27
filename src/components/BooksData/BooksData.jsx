@@ -24,7 +24,7 @@ const BooksData = ({ book }) => {
         <img src={image} alt="" className="w-52" />
       </div>
       <div className="space-y-5 w-full">
-        <h2 className="text-3xl font-semibold">{bookName}</h2>
+        <h2 className="text-3xl font-semibold font-playfair">{bookName}</h2>
         <h3 className="text-lg font-semibold text-gray-500">By: {author}</h3>
         <div className="flex flex-col lg:flex-row gap-5">
           <span className="text-md flex space-x-2 items-center">

@@ -15,7 +15,7 @@ const Book = ({ book }) => {
             <Tags key={index} text={item}></Tags>
           ))}
         </h2>
-        <h2 className="text-2xl font-bold">{bookName}</h2>
+        <h2 className="text-2xl font-bold font-playfair">{bookName}</h2>
         <span className="text-lg font-medium text-gray-600">By: {author}</span>
         <div className="divider"></div>
         <div className="card-actions flex justify-between w-42">

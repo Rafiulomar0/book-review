@@ -3,7 +3,7 @@ import { FaTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Profile = () => {
   return (
-    <div className="container mx-auto mt-12">
+    <div className="container mx-auto mt-12 font-work-sans">
       <div className="flex flex-col lg:flex-row gap-16 p-2">
         <div className="avatar">
           <div className="w-96 rounded">

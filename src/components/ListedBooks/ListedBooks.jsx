@@ -56,7 +56,7 @@ const ListedBooks = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto font-work-sans">
       <div className="bg-gray-200 h-24 rounded-3xl flex justify-center items-center mt-5">
         <p className="font-bold text-3xl">Books</p>
       </div>
