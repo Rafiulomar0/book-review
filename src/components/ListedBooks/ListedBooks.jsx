@@ -29,7 +29,7 @@ const ListedBooks = () => {
   };
 
   useEffect(() => {
-    fetch("../../../booksData.json")
+    fetch("../../../public/booksData.json")
       .then((response) => response.json())
       .then((data) => check(data));
   }, []);

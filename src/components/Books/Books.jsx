@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Books = () => {
   const [books, setBooks] = useState([]);
   useEffect(() => {
-    fetch("./booksData.json")
+    fetch("../../../public/booksData.json")
       .then((response) => response.json())
       .then((data) => setBooks(data));
   }, []);
